@@ -4,6 +4,7 @@ const LEVEL3_STR = ["font-family:", "align-items:", "flexbox"]
 var levelSelector = 0; 
 
 var sbt = document.getElementById("submit_btn");
+var sprite = document.getElementById("sprite");
 
 function checkInput(){
     var incorrect = [];
@@ -35,5 +36,8 @@ function checkInput(){
     for (let i = 0; i < incorrect.length; i++)
         alert(incorrect[i]);
     if (incorrect.length == 0)
-        alert("Ang galing mo!");
+    {
+        sprite.style.animation = `5s linear level1animation`;
+        sprite.style.transform = "translateX(80px)";
+    }
 }
