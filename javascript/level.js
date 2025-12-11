@@ -37,9 +37,9 @@ function checkInput(){
         alert(incorrect[i]);
     if (incorrect.length == 0)
     {
-        sprite.innerHTML = "<img src='../media/sprites/pengy2.png' alt='Pengy'>";
-        sprite.style.animation = `5s linear level1animation`;
+        sprite.style.animation = `5s ease-in-out level1animation`;
         setTimeout(() => {
+            sprite.innerHTML = "<img src='../media/sprites/pengy2.png' alt='Pengy'>";
             sprite.style.transform = `translateX(80px)`;
             }, 5000); // 5000 milliseconds = 5 seconds
     }

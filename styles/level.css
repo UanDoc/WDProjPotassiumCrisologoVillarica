@@ -76,11 +76,12 @@ li.code_area {
     display: flex; 
     width: auto; height: 35vh; 
     z-index: 500;
-    left: 10vw; top: 45vh;
+    left: 10vw; top: 50vh;
 }
 
 @keyframes level1animation{
-    100% {transform: translateX(80px);}
+    50% {transform: translateX(40px) translateY(-15px);}
+    100% {transform: translateX(40px) translateY(15px);}
 }
 
 /* GAME PROPER */
