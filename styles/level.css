@@ -110,6 +110,10 @@ li.code_area {
     100% {transform: scaleX(1) translateX(0px);}
 }
 
+@keyframes level3animation {
+    100% {transform: rotate(-90deg);}
+}
+
 /* GAME PROPER */
 #directions {
     width: 70vw; right: 15vw; position: fixed; top: 3vh; 
@@ -149,7 +153,7 @@ li.code_area {
     width: 29vw; 
 }
 
-/* LEVEL-SPECIFIC STYLING */
+/* BUTTON STYLING */
 
 button.level1 {
     background-color: #579dff;
@@ -158,5 +162,10 @@ button.level1 {
 
 button.level2 {
     background-color: #08ff98;
+    color: #262626;
+}
+
+button.level3 {
+    background-color: #ffee0b;
     color: #262626;
 }

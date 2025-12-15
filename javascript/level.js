@@ -1,6 +1,6 @@
 const LEVEL1_STR = ["transform:", "0,0,255", "}"];
 const LEVEL2_STR = ["document.getElementById", "=", "break;"];
-const LEVEL3_STR = ["font-family:", "align-items:", "flexbox"];
+const LEVEL3_STR = ["rotate(-90deg);", "align-items", "flexbox;"];
 
 const LEVEL_CLRS = ["#579dff", "#08ff98", "#ffee0b"];
 const LEVEL_ANIMATIONS = ["1s ease level1animation", "5s ease level2animation 3", "1s ease level3animation"];
@@ -24,6 +24,8 @@ var inp = "";
 var incorrect = [];
 
 function checkInput(level){
+    sbt.style.backgroundColor = "grey";
+
     for (let i = 0; i < 3; i++)
     {
         var_name = "inp" + (i + 1);
@@ -56,11 +58,19 @@ function checkInput(level){
     }
     if (incorrect.length == 0)
     {
+        if (level == 3)
+        {
+            sprite.style.display = "flexbox";
+            sprite.style.alignItems = "center";
+        }
+
         animationPlay(level);
     }
 }
 
 function refresh(level) {    
+    sbt.style.backgroundColor = LEVEL_CLRS[level - 1];
+
     if (level == 1)
     {
         sprite.innerHTML = "<img src='../media/sprites/pengy1.png' alt='Pengy'>";

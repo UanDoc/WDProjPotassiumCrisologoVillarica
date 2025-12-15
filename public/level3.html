@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>KEY CODE Lvl 2!</title>
+        <title>KEY CODE Lvl 3!</title>
         <link rel="stylesheet" href="../styles/level.css">
         <link rel="icon" href="../media/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
@@ -12,52 +12,44 @@
         <meta name="author" content="Crisologo & Villarica">
     </head>
 
-    <body style="background-image: url(../media/game_bgs/pondbg.png); background-size: contain; background-repeat: repeat-x;">
+    <body style="background-image: url(../media/game_bgs/skybg.png); background-size: contain; background-repeat: repeat-x;">
         <header> 
             <ul class="navbar">
                 <li id="home"><a href="../index.html">
                 <i class="fa fa-fw fa-home homeicon"></i>
                 </a></li>
                 <li>
-                    <p id="level_details"><b>Medium</b> Level</p>
+                    <p id="level_details"><b>Hard</b> Level</p>
                 </li>
             </ul>
         </header>
 
         <div id="directions">
-            <h3>Make the sprite swim (move) to the right and left for 3 laps!</h3>
+            <h3>Make the sprite have flexbox, centered (y-axis), and rotated 90deg 🔄.</h3>
         </div>
         
         <div id="sprite">
-            <img src="../media/sprites/duck.png" alt="Ducky">
+            <img src="../media/sprites/dove.png" alt="Dove">
         </div>
 
         <div id="code_area">
             <h2>Complete the code!</h2>
             <span>
-                <h3>level2.js</h4>
+                <h3>level3.css</h4>
                 <br>
                 <ul style="list-style-type: none;">
                     <li>
-                        <p>var duck =
-                        <input id="blank1" type="text">
-                        ("duck");</p>
+                        <p>#sprite {
                     </li>
-                    <li>
-                        <p>for (let i
-                        <input id="blank2">
-                        0; i < 5; i++) {<p>
-                    </li>
-                    <li class="indented">duck.style.animation = "5s ease duck_animation";</li>
-                    <li class="indented">if (i == 2)</li>
-                    <li style="text-indent: 50px;"><input id="blank3"></li>
-                    <li>setTimeout(() => {console.log("...");}, 5000);</li>
+                    <li><p>transform: </p><input id="blank1" type="text"></li>
+                    <li><input id="blank2" type="text"><p>: center;</p></li>
+                    <li><p>display: <input id="blank3" type="text"></li>
                     <li>}</li>
                 </ul>
             </span>
             <br>
-            <button class="level2" id="submit_btn" onclick="checkInput(2)">Submit!</button>
-            <button class="level2" id="reset_btn" onclick="refresh(2)"><i class="fa fa-refresh"></i></button>
+            <button class="level3" id="submit_btn" onclick="checkInput(3)">Submit!</button>
+            <button class="level3" id="reset_btn" onclick="refresh(3)"><i class="fa fa-refresh"></i></button>
         </div>
 
         <div id="progress_bar">
