@@ -17,4 +17,4 @@ Bricolage Grotesque (include to head)
 
 
 Bold Weight: Levels, navbar
-Normal Weight: regular text, citations/references
+Normal Weight: regular text, citations/references.
